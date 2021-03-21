@@ -1,0 +1,35 @@
+[cli]
+flavour = RDM
+logfile = /logs/invenio-cli.log
+
+[cookiecutter]
+project_name = Terrabrasilis Reproducible Research
+project_shortname = terrabrasilis-reproducible-research
+project_site = terrabrasilis-reproducible-research.com
+github_repo = terrabrasilis-reproducible-research/terrabrasilis-reproducible-research
+description = Terrabrasilis Reproducible Research InvenioRDM Instance
+author_name = Felipe Menino
+author_email = felipe.carlos@inpe.br
+year = 2021
+python_version = 3.8
+database = postgresql
+elasticsearch = 7
+file_storage = local
+_template = https://github.com/inveniosoftware/cookiecutter-invenio-rdm.git
+
+[files]
+dockerfile = 6ed7ddece5c52c1b75aa764cf38cfc3a0a4209e824ab66e9930f67012fb2e170
+pipfile = 880ecd5de05bd9ae9e457d17421012df0fea15434a933a0c8eeae61f2eaf8769
+docker-compose.full.yml = e3e4df343d340f281598486724e7819ab4cdc8aae2c82847806f02b0534afdd1
+invenio.cfg = 363adbb6aa120cf083f5e963b4215126980da1c0761c47a99126b8df69431b25
+.dockerignore = 21241bc12cdf4ac5f209d6b191adc8f25eb89af93ce5c4c3f72c86661162d7b5
+.gitignore = 0be2f3d2c1c9489ca861c4ca55a9c1845c22c43cbf92ed0cfaeeabde9b7ab2d2
+app_data = {'README.md': 'd58978488626bdeddc791a15a39e341a4ed06f202b84d0c0d4aa9ef49481c6d9'}
+assets = {'less': {'site': {'globals': {'site.variables': 'e168dee88a3a79816cc3dea83553da83cfc49432fdf0c9b219149713d6e1f21c', 'site.overrides': 'edc99163041bb2c35cced6479b6ab723c11df9785128288ed05813f78c58fc23'}}, 'theme.config': '6ac6cb587f64c190e0673254f76c1dd3b19d1a0bc948d21cae1523da30f37d1e'}, 'templates': {'search': {'.gitkeep': 'd4756cdf68d94c670c924f9d57d44718f666e457727701486435b57a97e52c5f'}}}
+templates = {'.gitkeep': 'd4756cdf68d94c670c924f9d57d44718f666e457727701486435b57a97e52c5f'}
+static = {'images': {'invenio-rdm.svg': '50f09b4d83244a69c58f44aa436a3fa097726d9b47fd0e0782ea92d31f854b65'}}
+docker-services.yml = 65da5420a69978412ada6e34fc1688e599a9a4ae369f4049104adb9724209da7
+docker-compose.yml = 0ea1e69992ab671b35cc9ec66bd670a1e42f4b19b1c20e22ce4ff2915ebda78c
+docker = {'nginx': {'test.crt': '3747756f328ba14163b9c414805677098f6d1798e5ba662df39b977d1445602e', 'Dockerfile': '541326766beaba2e8492255c99e11aa76640d71329ceab5bcab1c8d6a979bd5c', 'test.key': 'fa05f12870d28b817b71d14ade527098a6f9b6a5ae92b399d20ff68ee25385b9', 'conf.d': {'default.conf': 'e67e7706033598798ec422bba13243266a081c255162ba3b2d446cf97e92a148'}, 'nginx.conf': '6c9a6e372fc340dfcd3b49e6a30bd7bd36af41d79d1d093b7b3ba5f4c9d781b4'}, 'uwsgi': {'uwsgi_rest.ini': 'c36fc5021baf15f375b3b6c825f7753e5d166319c5fe38a85b604391ce5b37b6', 'uwsgi_ui.ini': 'c80168dc8d29086b876caab41b5057fddef46bdc748c5ecf213f684aa73cc90c'}}
+readme.md = 2e1f9abd01275f34dc45176ab24b7071d85d9a5e991c907572c86bbdc8fe2dfe
+
