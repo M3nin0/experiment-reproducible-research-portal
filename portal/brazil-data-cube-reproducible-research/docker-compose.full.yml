@@ -54,7 +54,7 @@ services:
       file: docker-services.yml
       service: app
     command: ["uwsgi /opt/invenio/var/instance/uwsgi_ui.ini"]
-    image: terrabrasilis-reproducible-research
+    image: brazil-data-cube-reproducible-research
     ports:
       - "5000"
     volumes:
@@ -68,7 +68,7 @@ services:
       file: docker-services.yml
       service: app
     command: ["uwsgi /opt/invenio/var/instance/uwsgi_rest.ini"]
-    image: terrabrasilis-reproducible-research
+    image: brazil-data-cube-reproducible-research
     ports:
       - "5000"
     volumes:
@@ -82,7 +82,7 @@ services:
       service: app
     restart: "always"
     command: ["celery -A invenio_app.celery worker --loglevel=INFO"]
-    image: terrabrasilis-reproducible-research
+    image: brazil-data-cube-reproducible-research
     depends_on:
       es:
         condition: service_started

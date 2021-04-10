@@ -5,7 +5,7 @@ services:
       context: ./
       args:
         - ENVIRONMENT=DEV
-    image: terrabrasilis-reproducible-research
+    image: brazil-data-cube-reproducible-research
     restart: "unless-stopped"
     environment:
       - "INVENIO_ACCOUNTS_SESSION_REDIS_URL=redis://cache:6379/1"
@@ -16,12 +16,12 @@ services:
       - "INVENIO_CELERY_RESULT_BACKEND=redis://cache:6379/2"
       - "INVENIO_SEARCH_ELASTIC_HOSTS=['es:9200']"
       - "INVENIO_SECRET_KEY=CHANGE_ME"
-      - "INVENIO_SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://terrabrasilis-reproducible-research:terrabrasilis-reproducible-research@db/terrabrasilis-reproducible-research"
+      - "INVENIO_SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://brazil-data-cube-reproducible-research:brazil-data-cube-reproducible-research@db/brazil-data-cube-reproducible-research"
       - "INVENIO_WSGI_PROXIES=2"
       - "INVENIO_RATELIMIT_STORAGE_URL=redis://cache:6379/3"
   frontend:
     build: ./docker/nginx/
-    image: terrabrasilis-reproducible-research-frontend
+    image: brazil-data-cube-reproducible-research-frontend
     restart: "unless-stopped"
     ports:
       - "80"
@@ -36,9 +36,9 @@ services:
     image: postgres:12.4
     restart: "unless-stopped"
     environment:
-      - "POSTGRES_USER=terrabrasilis-reproducible-research"
-      - "POSTGRES_PASSWORD=terrabrasilis-reproducible-research"
-      - "POSTGRES_DB=terrabrasilis-reproducible-research"
+      - "POSTGRES_USER=brazil-data-cube-reproducible-research"
+      - "POSTGRES_PASSWORD=brazil-data-cube-reproducible-research"
+      - "POSTGRES_DB=brazil-data-cube-reproducible-research"
     ports:
       - "5432:5432"
   mq:

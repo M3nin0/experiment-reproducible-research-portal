@@ -1,4 +1,4 @@
-# Terrabrasilis Reproducible Research
+# Brazil Data Cube Reproducible Research
 
 Welcome to your InvenioRDM instance.
 
