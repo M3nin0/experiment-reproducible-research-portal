@@ -5,6 +5,8 @@ Este serviço é um experimento que busca apresentar o fluxo de análise, proces
 ### Portal
 
 ```shell
+cd portal
+
 python3 -m venv venv
 
 source venv/bin/activate
