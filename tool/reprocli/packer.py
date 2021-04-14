@@ -26,7 +26,7 @@ def compendium_pack(compendium_directory: str, compendium_out: str = None) -> Co
 
     shutil.copy(compendium_metadata, compendium_metadata_tmp)
 
-    # ToDo: Change this "processos" to a arg
+    # ToDo: Change this "processes" to a arg
     bag = bagit.make_bag(compendium_directory, processes = 6)
 
     if not compendium_out:
