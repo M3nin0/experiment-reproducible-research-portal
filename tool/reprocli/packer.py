@@ -37,11 +37,10 @@ def compendium_pack(compendium_directory: str, compendium_out: str = None) -> Co
     shutil.copy(compendium_metadata_tmp, compendium_out)
 
     # Move compendium bagited
-    compendium_bagit = f"{compendium_directory}.zip"
-    compendium_bagit = os.path.join(compendium_out, compendium_bagit)
-    
-    shutil.move(compendium_bagit, compendium_bagit)
+    compendium_bagit = f"{compendium_directory}.zip"    
+    compendium_bagit_out = os.path.join(compendium_out, compendium_bagit)
+    shutil.move(compendium_bagit, compendium_bagit_out)
 
     return CompendiumPack(
-        compendium_bagit, os.path.join(compendium_out, "metadata.json")
+        compendium_bagit_out, os.path.join(compendium_out, "metadata.json")
     )
