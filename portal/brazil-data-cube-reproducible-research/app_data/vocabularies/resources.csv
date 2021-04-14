@@ -32,4 +32,5 @@ video,Video/Audio,film,,,Audiovisual,,motion_picture,33,dataset,https://schema.o
 software,Software,code,,,Software,,article,29,software,https://schema.org/SoftwareSourceCode
 lesson,Lesson,graduation,,,InteractiveResource,,speech,10,other,https://schema.org/CreativeWork
 other,Other,asterisk,,,Other,,article,20,other,https://schema.org/CreativeWork
-compendium,Compendium,table,,,Compendium,,compendium,20,compendium,https://schema.org/CreativeWork
+compendium,Compendium,asterisk,,,Compendium,,compendium,20,compendium,https://schema.org/CreativeWork
+,,,compendium-research,Research Compendium,Compendium,,compendium,20,compendium,https://schema.org/CreativeWork
