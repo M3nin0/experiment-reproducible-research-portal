@@ -1,30 +1,10 @@
-## Data Cube Reproducible Service
+## Experimento - Publicando pesquisas reprodutíveis
 
-Este serviço é um experimento que busca apresentar o fluxo de análise, processamento e publicação através de uma abordagem reprodutível.
+Este repositório armazena todo o código criado para a realização do experimento de execução e publicação de pesquisas reprodutíveis.
 
-### Portal
+**Componentes disponíveis**
 
-```shell
-cd portal
+Abaixo são listados os componentes criados para a realização desse experimento.
 
-python3 -m venv venv
-
-source venv/bin/activate
-```
-
-```shell
-pip install invenio-cli
-```
-
-```shell
-invenio-cli packages lock --pre --dev
-invenio-cli install --pre --development
-```
-
-```shell
-invenio-cli services setup
-```
-
-```shell
-invenio-cli run
-```
+- [portal](portal)
+- [reprocli](tool)
