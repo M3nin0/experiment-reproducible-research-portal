@@ -1,10 +1,10 @@
-## Experimento - Publicando pesquisas reprodutíveis
+## Invenio RDM Portal
 
-Este repositório armazena todo o código criado para a realização do experimento de execução e publicação de pesquisas reprodutíveis.
+Este repositório armazena os códigos relacionados à publicação de pesquisa reprodutível realizados na proposta de trabalho "Brazil Data Cube Reproducible Research Management".
 
 **Componentes disponíveis**
 
 Abaixo são listados os componentes criados para a realização desse experimento.
 
-- [portal](portal)
-- [reprocli](tool)
+- [`portal` - Portal de disseminação de pesquisa reprodutível](portal)
+- [`reprocli` - Ferramenta para publicação de Executable Research Compendium](tool)

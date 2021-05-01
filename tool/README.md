@@ -1,6 +1,6 @@
 ### reprocli
 
-Ferramenta para a publicação de `Research Compendium`. O pacote realiza a criação de um BagIt e em seguida faz sua ingestão na plataforma Invenio RDM.
+Ferramenta para a publicação de `Executable Research Compendium`. O pacote realiza a criação de um [BagIt](https://tools.ietf.org/html/rfc8493) e em seguida faz sua ingestão na plataforma Invenio RDM.
 
 **Instalação**
 
