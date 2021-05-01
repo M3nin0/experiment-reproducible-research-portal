@@ -5,7 +5,7 @@ install:
 	invenio-cli install --pre --development
 
 services:
-	invenio-cli services setup
+	invenio-cli services setup --force
 
 run:
 	invenio-cli run
